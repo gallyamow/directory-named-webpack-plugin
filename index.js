@@ -39,7 +39,7 @@ function doApply(options, resolver) {
     }
 
     if (options.transformFn) {
-      var transformResult = options.transformFn(dirName);
+      var transformResult = options.transformFn(dirName, request);
 
       if (!Array.isArray(transformResult)) {
         transformResult = [transformResult];
